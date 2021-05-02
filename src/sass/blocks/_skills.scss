@@ -51,9 +51,8 @@
 		&-item {
 			display: grid;
 			grid-template: minmax(21px, auto) 14px / 200px 35px;
-			row-gap: 27px;
 			justify-content: space-between;
-			align-content: center;
+			align-content: space-between;
 		}
 
 		&-title {
@@ -62,7 +61,7 @@
 			@include before_circle;
 		}
 
-		&-info {
+		&-counter {
 			font-size: 14px;
 			line-height: 21px;
 		}
