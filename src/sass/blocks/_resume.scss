@@ -1,22 +1,6 @@
 .resume {
 	padding-top: 120px;
 
-	&__title {
-		position: relative;
-		text-align: center;
-		@include before_circle;
-
-		&::before {
-			top: -6px;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-	}
-
-	&__subtitle {
-		text-align: center;
-	}
-
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, 425px);
@@ -28,17 +12,13 @@
 		&-title {
 			position: relative;
 			padding-left: 35px;
+			@include before_circle-min;
 
 			&::before {
 				content: '';
-				position: absolute;
 				top: 50%;
 				left: -7px;
 				transform: translateY(-50%);
-				width: 15px;
-				height: 15px;
-				border-radius: 100%;
-				background: $main-color;
 			}
 		}
 

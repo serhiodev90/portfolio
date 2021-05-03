@@ -11,3 +11,14 @@
 		z-index: -1;
 	}
 }
+
+@mixin before_circle-min {
+	&::before {
+		content: '';
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		border-radius: 100%;
+		background: $main-color;
+	}
+}
