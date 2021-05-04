@@ -11,29 +11,30 @@
 
 	&__item {
 		display: grid;
-		grid-template: 21px minmax(18px, auto) / 210px 122px;
+		grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
 		row-gap: 5px;
 		justify-content: space-between;
 		align-content: space-between;
-	}
-
-	&__item-title {
-		position: relative;
-		padding-left: 25px;
-		@include before_circle-min;
-
-		&::before {
-			content: '';
-			top: 3px;
-			left: 0;
+		
+		&-title {
+			position: relative;
+			padding-left: 25px;
+			@include before_circle-min;
+	
+			&::before {
+				content: '';
+				top: 3px;
+				left: 0;
+			}
 		}
+		
 	}
 
 	&__counter {
+		justify-self: end;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 21px;
-		text-align: right;
 	}
 
 	&__descr {
