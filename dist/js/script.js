@@ -15,4 +15,24 @@ const counters = document.querySelectorAll('.skills__progress-counter'),
 
 counters.forEach((item, i) => {
 	lines[i].style.width = item.innerHTML;
-});		
+});
+
+$(document).ready(function () {
+	$('form').validate({
+		rules: {
+			name: "required",
+			email: {
+				required: true,
+				email: true
+			},
+			check: "required"
+		},
+		messages: {
+			name: "Пожалуйста, введите ваше имя",
+			email: {
+				required: "Пожалуйста, введите вашe почту",
+				email: "Введите корректный email"
+			}
+		}
+	});
+});	
