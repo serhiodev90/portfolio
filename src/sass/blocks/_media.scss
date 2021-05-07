@@ -24,7 +24,14 @@
 			grid-template-columns: 40px 195px;
 			column-gap: 15px;
 		}
-	}	
+	}
+
+	.resume {
+		&__wrapper {
+			grid-template-columns: repeat(2,375px);
+			column-gap: 80px;
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -51,6 +58,14 @@
 		&__skill {
 			grid-template-columns: 40px 320px;
 			column-gap: 20px;
+		}
+	}
+
+	.resume {
+		&__wrapper {
+			grid-template-columns: repeat(2,330px);
+			column-gap: 60px;
+			padding: 60px 0 0;
 		}
 	}
 }
@@ -91,6 +106,16 @@
 		&__skill {
 			grid-template-columns: 40px 200px;
 			column-gap: 20px;
+		}
+	}
+
+	.resume {
+		padding-top: 40px;
+
+		&__wrapper {
+			grid-template-columns: 1fr;
+			column-gap: 0;
+			row-gap: 40px;
 		}
 	}
 }
@@ -142,6 +167,21 @@
 
 		&__skills {
 			grid-template-columns: 1fr;
+			justify-self: center;
+		}
+	}
+
+	.resume {
+		.container {
+			padding: 0 15px;
+		}
+
+		.divider {
+			margin: 0 auto;
+		}
+
+		&__wrapper {
+			padding-top: 40px;
 		}
 	}
 }
